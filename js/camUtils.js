@@ -25,18 +25,12 @@ function	scale_video(video, res)
     $(res).css({
         'marginLeft' : marginLeftAdjust,
     });
-    if ($(video).css("width") < $(video).css("height"))
-    {
+
     	 $(res).css({
 	    	'width' : ($(video).css("width")),
 	    });
-    }
-    else
-    {
-		$(res).css({
-			'height' : ($(video).css("height")),
-		});
-    }
+
+
     $(res).css({
     	'marginLeft' : marginLeftAdjust,
     	'margin-top' : ($(window).height() / 2) - ($(res).height() / 2)
@@ -71,7 +65,7 @@ function	request_api(d)
     	if (typeof(data[0]) != "undefined" && typeof(data[1]) == "undefined")
     	{
         	console.log(JSON.stringify(data));
-        	post("http://localhost:8080/panel.html", {}, 'post');
+        	//post("http://localhost:8080/panel.html", {}, 'post');
     	}
         else
         {
