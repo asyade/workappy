@@ -1,5 +1,6 @@
 var ready = false;
 
+
 (function() {
 
   var streaming = false,
@@ -41,11 +42,9 @@ var ready = false;
       height = video.videoHeight / (video.videoWidth/width);
       video.setAttribute('width', width);
       video.setAttribute('height', height);
-      canvas.setAttribute('width', width);
-      canvas.setAttribute('height', height);
       scale_video("#video", "#img-result");
       streaming = true;
-      window.setTimeout(()=>{ready = true;}, 1000);
+      window.setTimeout(()=>{ready = true;}, 300);
     }
   }, false);
 
@@ -56,13 +55,15 @@ var ready = false;
     canvas.height = height;
     canvas.getContext('2d').drawImage(video, 0, 0, width, height);
     var data = canvas.toDataURL('image/png');
+        canvas.width = 0;
+    canvas.height = 0;
+    console.log("Api de merde !");
     request_api(data);
   }
 
   startbutton.addEventListener('click', function(ev){
       if (ready === true){
         ready = false;
-        $("#img-result").slideToggle();
         $("#take-btn").fadeOut();
         takepicture();
        ev.preventDefault();
