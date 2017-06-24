@@ -1,0 +1,27 @@
+#img-container{
+}
+
+.abs-top-center{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.abs-full{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.full{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.bck-dark{
+	background-color: #262626;
+}

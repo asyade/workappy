@@ -1,0 +1,24 @@
+.btn-rounded{
+	position: absolute;
+	bottom: 5%;
+	width:67px;
+	height: 67px;
+	display: block;
+	left: 50%;
+	margin-left: -33.5px;
+	background-color: #ffd000;
+	border-radius: 100%;
+	font-size: 25px;
+	border: 5px solid #dd7a45;
+	padding: 11px 17px;
+	cursor: pointer;
+}
+
+.img-container{
+	display: none;
+}
+
+.img-container canvas{
+	display: none;
+	position: absolute;
+}
