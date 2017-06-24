@@ -50,14 +50,13 @@
     canvas.height = height;
     canvas.getContext('2d').drawImage(video, 0, 0, width, height);
     var data = canvas.toDataURL('image/png');
-     console.log(data);
-    //request_api(data);
+    request_api(data);
   }
 
   startbutton.addEventListener('click', function(ev){
       $("#img-result").slideToggle();
       $("#take-btn").fadeOut();
-      takepicture();
+    takepicture();
     ev.preventDefault();
   }, false);
 })();

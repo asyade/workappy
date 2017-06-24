@@ -1,3 +1,5 @@
+var stats;
+
 function dataURLtoBlob(dataurl) {
     var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
         bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
@@ -25,12 +27,9 @@ function	scale_video(video, res)
     $(res).css({
         'marginLeft' : marginLeftAdjust,
     });
-
-    	 $(res).css({
-	    	'width' : ($(video).css("width")),
-	    });
-
-
+	$(res).css({
+    	'width' : ($(video).css("width")),
+    });
     $(res).css({
     	'marginLeft' : marginLeftAdjust,
     	'margin-top' : ($(window).height() / 2) - ($(res).height() / 2)
@@ -64,8 +63,8 @@ function	request_api(d)
     .done(function(data) {
     	if (typeof(data[0]) != "undefined" && typeof(data[1]) == "undefined")
     	{
-        	console.log(JSON.stringify(data));
-        	//post("http://localhost:8080/panel.html", {}, 'post');
+            stats = data[0];
+        	gotop("step2");
     	}
         else
         {
@@ -78,22 +77,3 @@ function	request_api(d)
     });
 }
 
-function post(path, params, method) {
-    method = method || "post";
-    var form = document.createElement("form");
-    form.setAttribute("method", method);
-    form.setAttribute("action", path);
-
-    for(var key in params) {
-        if(params.hasOwnProperty(key)) {
-            var hiddenField = document.createElement("input");
-            hiddenField.setAttribute("type", "hidden");
-            hiddenField.setAttribute("name", key);
-            hiddenField.setAttribute("value", params[key]);
-
-            form.appendChild(hiddenField);
-         }
-    }
-    document.body.appendChild(form);
-    form.submit();
-}
