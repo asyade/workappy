@@ -11,20 +11,21 @@ var ready = false;
       width = $( window ).width(),
       height = $( window ).height()
 
-  navigator.getMedia = ( navigator.getUserMedia ||
-                         navigator.webkitGetUserMedia ||
-                         navigator.mozGetUserMedia ||
-                         navigator.msGetUserMedia);
-
+  navigator.getMedia = ( navigator.mozGetUserMedia ||
+                        navigator.getUserMedia ||
+                       navigator.webkitGetUserMedia ||
+                       navigator.mediaDevices.getUserMedia ||
+                       navigator.msGetUserMedia);
   navigator.getMedia(
     {
       video: true,
       audio: false
     },
     function(stream) {
-      if (navigator.mediaDevices.getUserMedia) {
+      if (navigator.mozGetUserMedia) {
         video.srcObject = stream;
-      } else {
+      }
+      else {
         var vendorURL = window.URL || window.webkitURL;
         video.src = vendorURL.createObjectURL(stream);
       }
