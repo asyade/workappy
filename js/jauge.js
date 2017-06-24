@@ -4,7 +4,7 @@ function init_jauge()
     var skillBar = $('.inner');
     var skillVal = skillBar.attr("data-progress");
     $(skillBar).animate({
-        height: 300
-    }, 1300);
+        height: 20000
+    }, 1600);
    	}, 200);
 }

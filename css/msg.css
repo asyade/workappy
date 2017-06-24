@@ -1,0 +1,33 @@
+p.speech {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  border-right: 10px;
+  text-align: center;
+  padding-top: 15px;
+  line-height: 250%;
+  background-color: #fff;
+  border: 8px solid #666;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px #888;
+}
+p.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 52%;
+  top: 100%;
+  border: 25px solid;
+  border-color: #666 transparent transparent #666;
+}
+p.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 54%;
+  top: 100%;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}

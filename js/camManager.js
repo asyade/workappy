@@ -1,3 +1,5 @@
+var ready = false;
+
 (function() {
 
   var streaming = false,
@@ -42,8 +44,11 @@
       canvas.setAttribute('height', height);
       scale_video("#video", "#img-result");
       streaming = true;
+      window.setTimeout(()=>{ready = true;}, 1000);
     }
   }, false);
+
+
 
   function takepicture() {
     canvas.width = width;
@@ -54,9 +59,14 @@
   }
 
   startbutton.addEventListener('click', function(ev){
-      $("#img-result").slideToggle();
-      $("#take-btn").fadeOut();
-    takepicture();
-    ev.preventDefault();
+      if (ready === true){
+        ready = false;
+        $("#img-result").slideToggle();
+        $("#take-btn").fadeOut();
+        takepicture();
+       ev.preventDefault();
+      }
   }, false);
+
+ 
 })();

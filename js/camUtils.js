@@ -64,13 +64,14 @@ function	request_api(d)
     	if (typeof(data[0]) != "undefined" && typeof(data[1]) == "undefined")
     	{
             stats = data[0];
-        	gotop("step2");
+        	gotop("step1");
     	}
         else
         {
 			$("#img-result").slideToggle();
 			$("#take-btn").fadeIn();
         }
+        ready = true;
     })
     .fail(function() {
         console.log("Api error !");
