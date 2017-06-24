@@ -41,7 +41,6 @@ $(window).resize(function(){
 });
 
 $(window).load(function(){
-	$( "#img-result" ).slideToggle();
 });
 
 function	request_api(d)
@@ -52,7 +51,7 @@ function	request_api(d)
         url: "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize?" + $.param(params),
         beforeSend: function(xhrObj){
             xhrObj.setRequestHeader("Content-Type","application/octet-stream");
-            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","21b9bd9785ef4bf396783ac499ecfb9c");
+            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","b6b23cded4794fbab86a54584b3f9a1b");
         },
         type: "POST",
         processData: false,
@@ -68,13 +67,12 @@ function	request_api(d)
     	}
         else
         {
-			$("#img-result").slideToggle();
 			$("#take-btn").fadeIn();
         }
         ready = true;
     })
     .fail(function() {
-        console.log("Api error !");
+        $("#take-btn").fadeIn();
     });
 }
 
