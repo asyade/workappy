@@ -11,10 +11,6 @@ var			textes = {
 			"What a dynamism today ! Time to share innovative ideas !",
 			"I'm not perfect but I'm me and thats even better",
 			"Show off this smile like a trophy all day long !",
-			"	- My brother just got a puppy. \
-				- Do you help take care of him ? \
-				- No, my brother's old enough to take care of himself.",
-
 			"- Father : Why did you put that frog in your brother's bed ? \
 				- Son : So disgusted !  I couldn't find any worms !",
 			"Be yourself; everyone else is already taken. \
@@ -25,14 +21,13 @@ var			textes = {
 			And live like it's heaven on earth. \
 			William W. Purkey",
 		],
-
 	'neutral' :
 		[
 			"Happiness is not something ready made. It comes from your own actions. \
 			― Dalai Lama XIV",
-			"Don't seem very enthousiastic today... Try and say cheese ! That's good ! Now keep smiling and make your day better again.",
+			"Don't seem very enthousiastic today... Try and say cheese ! That's good ! Now keep smiling and make your day great again.",
 			"Meh Dou you know there is a drone race at 12 in the hall ?",
-			"Time to make a break ! Why not having a coffee with some colleagues ?",
+			"Time to have a break ! Why not having a coffee with some colleagues ?",
 			"	- He used to take his dog to school every day, but he finally had to stop. \
 				- How come? \
 				- The dog got graduated.",
@@ -60,9 +55,7 @@ var			textes = {
 			"Quick massage : Put some circular pressure on the palm of one hand with the thumb of the other hand. ",
 			"Pick 3 words that describe you among that list : kind, funny, attentive, passionate, careful, helpful, gentle, curious, beautiful. Now repeat I am adjective 1, adjective 2, adjective 3 twice in the day.",
 			"Tips for concentration : Stare at an object for 30 seconds, then try and represent it mentally as precise as possible with your eyes closed.",
-
 		]
-
 }
 
 function	print_bubble()
