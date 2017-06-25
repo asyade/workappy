@@ -16,7 +16,6 @@ var			textes = {
 				- No, my brother's old enough to take care of himself.",
 
 			"- Father : Why did you put that frog in your brother's bed ? \
-<<<<<<< HEAD
 				- Son : So disgusted !  I couldn't find any worms !",
 			"Be yourself; everyone else is already taken. \
 			Oscar Wilde",
@@ -25,25 +24,11 @@ var			textes = {
 			Sing like there's nobody listening, \
 			And live like it's heaven on earth. \
 			William W. Purkey",
-=======
-				- Son : So disgusted !  I couldn't find any worms !"
-			"“Be yourself; everyone else is already taken.” \
-			― Oscar Wilde",
-			"“You've gotta dance like there's nobody watching, \
-			Love like you'll never be hurt, \
-			Sing like there's nobody listening, \
-			And live like it's heaven on earth.” \
-			― William W. Purkey",
->>>>>>> a66febeaee4c8f9e5a2572ecd64d5cc0f4b0c1a1
 		],
 
 	'neutral' :
 		[
-<<<<<<< HEAD
 			"Happiness is not something ready made. It comes from your own actions. \
-=======
-			"“Happiness is not something ready made. It comes from your own actions.” \
->>>>>>> a66febeaee4c8f9e5a2572ecd64d5cc0f4b0c1a1
 			― Dalai Lama XIV",
 			"Don't seem very enthousiastic today... Try and say cheese ! That's good ! Now keep smiling and make your day better again.",
 			"Meh Dou you know there is a drone race at 12 in the hall ?",
@@ -52,7 +37,6 @@ var			textes = {
 				- How come? \
 				- The dog got graduated.",
 			"Quick massage : Rub your eyebrows with your thumbs by putting some circular pressure.",
-<<<<<<< HEAD
 			"Go and pick up some chocolate to your colleague !",
 			"It's so hard to forget pain, but it's even harder to remember sweetness. We have no scar to show for happiness. We learn so little from peace. \
 			Chuck Palahniuk, Diary",
@@ -66,21 +50,6 @@ var			textes = {
 			"For every minute you are angry you lose sixty seconds of happiness. \
 			Ralph Waldo Emerson",
 			"The best way to cheer yourself up is to try to cheer somebody else up. \
-=======
-			"Go and pick up some chocolate to your colleague !"
-			"“It's so hard to forget pain, but it's even harder to remember sweetness. We have no scar to show for happiness. We learn so little from peace.” \
-			― Chuck Palahniuk, Diary",
-			"“Be the change that you wish to see in the world.” \
-			― Mahatma Gandhi",
-		],
-	'sad' :
-		[
-			"“Count your age by friends, not years. Count your life by smiles, not tears.” \
-			― John Lennon",
-			"“For every minute you are angry you lose sixty seconds of happiness.” \
-			― Ralph Waldo Emerson",
-			"“The best way to cheer yourself up is to try to cheer somebody else up.” \
->>>>>>> a66febeaee4c8f9e5a2572ecd64d5cc0f4b0c1a1
 			Mark Twain",
 			"Hard day ? Why not having a coffee with some colleagues.",
 			"A guy shows up late for work. The boss yells, You should have been here at 8.30! He replies. Why? What happened at 8.30?",
@@ -90,11 +59,8 @@ var			textes = {
 			"Quick massage : Rub your neck with your fingers and put some pressure ",
 			"Quick massage : Put some circular pressure on the palm of one hand with the thumb of the other hand. ",
 			"Pick 3 words that describe you among that list : kind, funny, attentive, passionate, careful, helpful, gentle, curious, beautiful. Now repeat I am adjective 1, adjective 2, adjective 3 twice in the day.",
-<<<<<<< HEAD
 			"Tips for concentration : Stare at an object for 30 seconds, then try and represent it mentally as precise as possible with your eyes closed.",
-=======
-			"Tips for concentration : Stare at an object for 30 seconds, then try and represent it mentally as precise as possible with your eyes closed."
->>>>>>> a66febeaee4c8f9e5a2572ecd64d5cc0f4b0c1a1
+
 		]
 
 }
@@ -112,8 +78,5 @@ function	print_bubble()
 		$(".speech").html(textes.sad[Math.floor(Math.random() * textes.sad.length)]);
 	else
 		$(".speech").html("hello");
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> a66febeaee4c8f9e5a2572ecd64d5cc0f4b0c1a1
