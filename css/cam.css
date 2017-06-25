@@ -9,9 +9,11 @@
 	background-color: #ffd000;
 	border-radius: 100%;
 	font-size: 25px;
-	border: 5px solid #dd7a45;
+	border: 4px solid orange;
 	padding: 11px 17px;
 	cursor: pointer;
+	background: url(../imgs/logo.png);
+	background-size: contain;
 }
 
 .img-container{

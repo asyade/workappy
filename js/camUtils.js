@@ -41,6 +41,7 @@ $(window).resize(function(){
 });
 
 $(window).load(function(){
+
 });
 
 function	request_api(d)
@@ -68,11 +69,13 @@ function	request_api(d)
         else
         {
 			$("#take-btn").fadeIn();
+            $("#load-box").fadeOut();
         }
         ready = true;
     })
     .fail(function() {
         $("#take-btn").fadeIn();
+        $("#load-box").fadeOut();
         ready = true;
     });
 }

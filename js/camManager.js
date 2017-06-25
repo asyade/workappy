@@ -44,7 +44,9 @@ var ready = false;
       video.setAttribute('height', height);
       scale_video("#video", "#img-result");
       streaming = true;
-      window.setTimeout(()=>{ready = true;}, 300);
+      window.setTimeout(()=>{ready = true;
+        $("#load-box").fadeOut();
+      }, 500);
     }
   }, false);
 
@@ -62,6 +64,7 @@ var ready = false;
       if (ready === true){
         ready = false;
         $("#take-btn").fadeOut();
+        $("#load-box").fadeIn();
         takepicture();
        ev.preventDefault();
       }
