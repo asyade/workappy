@@ -9,6 +9,7 @@ p.speech:before {
   border: 25px solid;
   border-color: #666 transparent transparent #666;
 }
+
 p.speech:after {
   content: ' ';
   position: absolute;

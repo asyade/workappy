@@ -12,7 +12,7 @@
     background-color: #F4FEFE;
     border: 8px solid #666;
     border-radius: 30px;
-    box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #382d32 !important;
   }
 }
 @media (max-width: 700px) {

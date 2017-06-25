@@ -37,6 +37,11 @@ function	gotop(p)
 	});
 }
 
+$(".btn-rounded").on("click", (ev)=>{
+	$(".btn-rounded").addClass("spin");
+});
+
+
 function	step2handle(ev)
 {
 	bubble.removeEventListener('click', step2handle);
