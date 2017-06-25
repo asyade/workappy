@@ -71,14 +71,14 @@ function	request_api(d)
         {
             ready = true;
             $("#take-btn").fadeIn();
-            $("#load-box").fadOut();
+            $("#load-box").fadeOut();
         }
         ready = true;
     })
     .fail(function() {
         ready = true;
         $("#take-btn").fadeIn();
-        $("#load-box").fadOut();
+        $("#load-box").fadeOut();
     });
 }
 
