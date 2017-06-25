@@ -73,6 +73,7 @@ function	request_api(d)
     })
     .fail(function() {
         $("#take-btn").fadeIn();
+        ready = true;
     });
 }
 
