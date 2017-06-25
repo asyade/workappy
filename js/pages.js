@@ -1,4 +1,4 @@
-var BASE_URI = "http://localhost:8080/"
+var BASE_URI = "vps416438.ovh.net/"
 var bubble = document.querySelector('#page-container');
 
 function	gotop(p)
@@ -30,7 +30,7 @@ function	gotop(p)
 	    	print_res();
 	  	    init_jauge();
 	  	    reset.addEventListener('click', ()=>{
-		  	    window.location.href = BASE_URI;
+		  	    document.location.href=$(BASE_URI);
 	  	    });
 	    }
 	    	$("#page-container").fadeIn(1000);
