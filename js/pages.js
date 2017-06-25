@@ -19,10 +19,17 @@ function	gotop(p)
 	.done(function(data) {
 	    $("#page-container").html(data);
 	    if (p == "step1")
+<<<<<<< HEAD
+	    {
+	    	print_bubble();
+	    	bubble.addEventListener('click', step2handle, false);
+	    }
+=======
 		{
 			print_bubble();
 	    	bubble.addEventListener('click', step2handle, false);
 		}
+>>>>>>> a66febeaee4c8f9e5a2572ecd64d5cc0f4b0c1a1
 	    if (p == "step2")
 	    {
 	    	var reset = document.querySelector('#btn-reset');

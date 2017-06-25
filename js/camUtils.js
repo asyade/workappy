@@ -62,20 +62,23 @@ function	request_api(d)
 
     })
     .done(function(data) {
-    	if (typeof(data[0]) != "undefined" && typeof(data[1]) == "undefined")
+    	if (typeof(data[0]) != "undefined")
     	{
             stats = data[0];
         	gotop("step1");
     	}
         else
         {
-			$("#take-btn").fadeIn();
+            ready = true;
+            $("#take-btn").fadeIn();
+            $("#load-box").fadOut();
         }
         ready = true;
     })
     .fail(function() {
-        $("#take-btn").fadeIn();
         ready = true;
+        $("#take-btn").fadeIn();
+        $("#load-box").fadOut();
     });
 }
 

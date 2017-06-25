@@ -62,8 +62,10 @@ var ready = false;
 
   startbutton.addEventListener('click', function(ev){
       if (ready === true){
+
         ready = false;
         $("#load-box").fadeIn();
+        $("#take-btn").fadeOut();
         takepicture();
        ev.preventDefault();
       }
